@@ -9,21 +9,21 @@ c=None
 
 def sumar(a,b):
     c = a + b
-    print("Resultado es :"+c)
+    return print("Resultado es :",c)
 
 def restar(a,b):
     c= a - b
-    print(c)
+    return print("Resultado es :",c)
 
 def menu():
-    print("Seleccione una operacion \n 1-Sumar \n 2-restar \n 3-Multiplicacion :\n")
+    print("Seleccione una operacion \n 1-Sumar \n 2-restar \n 3-Multiplicacion :\n 4-Salir\n")
     s=input("Ingrese opcion: ")
     return s
 
 
 def multiplicar(a,b):
-    c= a*b
-    print(c)
+    c= a * b
+    return print("Resultado es :",c)
     
 
 while True:
@@ -33,18 +33,22 @@ while True:
 
 
 
+
     if opcion=='1' :
         sumar(x,y)
     
-        menu()
+        
 
     elif opcion=='2' :
         restar(x,y)
-        menu()
+        
 
     elif opcion=='3' :
         multiplicar(x,y)
-        menu()
+
+    elif opcion=='4':
+        exit()
+        
     else:
         print("Opcion no valida, intente de nuevo")
 
