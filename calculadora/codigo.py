@@ -4,13 +4,34 @@ print("Content-Type: text/html\n")
 
 x = input("Ingresa primer numero")
 y = input("Ingresa segundo numero")
-c=0
+c=None
+s=None
 
-
-def sumar():
-    c = (x + y)
+def sumar(a,b):
+    c = (a + b)
     print(c)
 
-print("Seleccione una operacion \n 1-Sumar \n 2-restar \n 3-Multiplicacion \n")
+def restar(a,b):
+    c= (a - b)
+    print(c)
 
-s=input()
+def menu():
+    print("Seleccione una operacion \n 1-Sumar \n 2-restar \n 3-Multiplicacion \n")
+    s=input()
+
+menu()
+
+
+
+
+
+if s==1 :
+    sumar(x,y)
+    menu()
+
+if s==2 :
+    restar(x,y)
+    menu()
+
+
+
