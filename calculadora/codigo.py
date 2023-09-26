@@ -2,45 +2,51 @@
 
 print("Content-Type: text/html\n")
 
-x = input("Ingresa primer numero =\n")
-y = input("Ingresa segundo numero =\n")
+x = int(input("Ingresa primer numero =\n"))
+y = int(input("Ingresa segundo numero =\n"))
 c=None
-s=None
+
 
 def sumar(a,b):
-    c = (a + b)
-    print(c)
+    c = a + b
+    print("Resultado es :"+c)
 
 def restar(a,b):
-    c= (a - b)
+    c= a - b
     print(c)
 
 def menu():
     print("Seleccione una operacion \n 1-Sumar \n 2-restar \n 3-Multiplicacion :\n")
-    s=input()
+    s=input("Ingrese opcion: ")
+    return s
+
 
 def multiplicar(a,b):
-    c=(a*b)
+    c= a*b
     print(c)
     
 
-menu()
+while True:
+    opcion= menu()
 
 
 
 
 
-if s==1 :
-    sumar(x,y)
-    menu()
+    if opcion=='1' :
+        sumar(x,y)
+    
+        menu()
 
-if s==2 :
-    restar(x,y)
-    menu()
+    elif opcion=='2' :
+        restar(x,y)
+        menu()
 
-if s==3 :
-    multiplicar(x,y)
-    menu()
+    elif opcion=='3' :
+        multiplicar(x,y)
+        menu()
+    else:
+        print("Opcion no valida, intente de nuevo")
 
 
 
