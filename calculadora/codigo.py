@@ -24,25 +24,20 @@ def menu():
 def multiplicar(a,b):
     c= a * b
     return print("Resultado es :",c)
-    
+  
+def dividir():
+    c = x / y
+    return c  
 
 while True:
     opcion= menu()
 
-
-
-
-
-
     if opcion=='1' :
         sumar(x,y)
-    
-        
 
     elif opcion=='2' :
         restar(x,y)
         
-
     elif opcion=='3' :
         multiplicar(x,y)
 
@@ -51,6 +46,3 @@ while True:
         
     else:
         print("Opcion no valida, intente de nuevo")
-
-
-
