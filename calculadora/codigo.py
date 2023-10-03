@@ -7,7 +7,7 @@ y = int(input("Ingresa segundo numero =\n"))
 c=None
 
 
-def sumar(a,b):
+def nuevaFuncionSumar(a,b):
     c = a + b
     return print("Resultado es :",c)
 
@@ -33,7 +33,7 @@ while True:
     opcion= menu()
 
     if opcion=='1' :
-        sumar(x,y)
+        nuevaFuncionSumar(x,y)
 
     elif opcion=='2' :
         restar(x,y)
