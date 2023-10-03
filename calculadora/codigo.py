@@ -20,7 +20,7 @@ def menu():
     s=input("Ingrese opcion: ")
     return s
 
-
+#hola
 def multiplicar(a,b):
     c= a * b
     return print("Resultado es :",c)
