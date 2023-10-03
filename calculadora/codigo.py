@@ -16,7 +16,7 @@ def restar(a,b):
     return print("Resultado es :",c)
 
 def menu():
-    print("Seleccione una operacion \n 1-Sumar \n 2-restar \n 3-Multiplicacion :\n 4-Salir\n")
+    print("Seleccione una operacion \n 1-Sumar \n 2-restar \n 3-Multiplicacion :\n 4-Salir\n 5-Potencia(1er num ele al 2)\n")
     s=input("Ingrese opcion: ")
     return s
 
@@ -28,6 +28,10 @@ def multiplicar(a,b):
 def dividir():
     c = x / y
     return c  
+
+def calcuPotencias(x,y):
+    c=x ** y
+    return c
 
 while True:
     opcion= menu()
@@ -43,6 +47,9 @@ while True:
 
     elif opcion=='4':
         exit()
+    
+    elif opcion=='5':
+        calcuPotencias()
         
     else:
         print("Opcion no valida, intente de nuevo")
